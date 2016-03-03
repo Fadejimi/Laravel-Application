@@ -60,3 +60,20 @@ Route::get('vote', array(
 		return 'Vote';
 	}
 ));
+
+Route::get('programs', function(){
+	return View::make('programs');
+});
+
+Route::get('graphic-designs', function(){
+	return View::make('graphic-designs');
+});
+
+Route::get('signup', function(){
+	return View::make('signup');
+});
+
+Route::post('thanks', function(){
+	$theEmail = Input::get('email');
+	return View::make('thanks')->with('theEmail', $theEmail);
+});

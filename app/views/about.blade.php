@@ -4,26 +4,26 @@
 <meta charset="UTF-8">
 <title>About Roux Academy</title>
 <!--[if lt IE 9]>
-<script src="{{URL::asset('http://html5shiv.googlecode.com/svn/trunk/html5.js')}}"></script>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <!--[if lt IE 9]>
-<script src="{{URL::asset('../_scripts/respond.min.js')}}"></script>
+<script src="{{ URL::asset('_scripts/respond.min.js') }}"></script>
 <![endif]-->
-<link href="{{URL::asset('../../public/css/css/main.css')}}" rel="stylesheet" media="screen, projection">
-<script src="{{URL::asset('http://maps.google.com/maps/api/js?sensor=true')}}" type="text/javascript"></script>
+<link href="{{ URL::asset('_css/main.css') }}" rel="stylesheet" media="screen, projection">
+<script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 </head>
 <body>
 <header class="aboutHeader pageHeader">
-<h1>Roux Academy of Art and Design<a href="{{URL::asset('/index.htm')}}" title="home"></a></h1>
+<h1>Roux Academy of Art and Design<a href="/index.htm" title="home"></a></h1>
 <nav id="pageNav" class="cf">
   <ul>
-    <li><a href="{{URL::asset('programs/programs.htm')}}" title="programs">Programs</a></li>
-    <li><a href="{{URL::asset('admissions.htm')}}" title="admissions">Admissions</a></li>
-    <li><a href="{{URL::asset('student_portal.htm')}}" title="student portal">Student Portal</a></li>
-    <li><a href="{{URL::asset('campus_portal.htm')}}" title="campus portal">Campus</a></li>
-    <li><a href="{{URL::asset('alumni.htm" title="alumni')}}">Alumni</a></li>
-    <li><a href="{{URL::asset('about/about.htm')}}"  title="about Roux Academy">About</a></li>
+    <li><a href="programs/programs.htm" title="programs">Programs</a></li>
+    <li><a href="admissions.htm" title="admissions">Admissions</a></li>
+    <li><a href="student_portal.htm" title="student portal">Student Portal</a></li>
+    <li><a href="campus_portal.htm" title="campus portal">Campus</a></li>
+    <li><a href="alumni.htm" title="alumni">Alumni</a></li>
+    <li><a href="about/about.htm"  title="about Roux Academy">About</a></li>
   </ul>
 </nav>
 </header>
@@ -48,20 +48,20 @@ New York, New York 10001<br>
 <section class="academic info">
 <h2>Academic Links</h2>
 <ul>
-  <li><a href="{{URL::asset('about/undergraduate.htm')}}" title="undergraduate degrees">Undergraduate Degrees</a></li>
-  <li><a href="{{URL::asset('about/graduate.htm')}}" title="Graduate Degrees">Graduate Degree Programs</a></li>
-  <li><a href="{{URL::asset('about/continuing-education.htm')}}" title="Continuing education">Continuing Education</a></li>
-  <li><a href="{{URL::asset('about/faculty.htm')}}" title="Faculty">Faculty Profiles</a></li>
-   <li><a href="{{URL::asset('about/application-requirement.htm')}}" title="Application requirements">Application Requirements</a></li>
-  <li><a href="{{URL::asset('about/study-abroad.htm')}}" title="Study abroad programs">Study Abroad Programs</a></li>
-  <li><a href="{{URL::asset('about/internships.htm')}}" title="Internship programs">Internship Programs</a></li>
-  <li><a href="{{URL::asset('about/calendar.htm')}}" title="Academic calendar">Academic Calendar</a></li>
+  <li><a href="about/undergraduate.htm" title="undergraduate degrees">Undergraduate Degrees</a></li>
+  <li><a href="about/graduate.htm" title="Graduate Degrees">Graduate Degree Programs</a></li>
+  <li><a href="about/continuing-education.htm" title="Continuing education">Continuing Education</a></li>
+  <li><a href="about/faculty.htm" title="Faculty">Faculty Profiles</a></li>
+   <li><a href="about/application-requirement.htm" title="Application requirements">Application Requirements</a></li>
+  <li><a href="about/study-abroad.htm" title="Study abroad programs">Study Abroad Programs</a></li>
+  <li><a href="about/internships.htm" title="Internship programs">Internship Programs</a></li>
+  <li><a href="about/calendar.htm" title="Academic calendar">Academic Calendar</a></li>
 </ul>
 </section>
 <section class="connect info">
 <h2>Connect with us</h2>
 <ul>
-  <li><a href="{{URL::asset('http://www.twitter.com/rouxacademy')}}" title="Follow us!" target="_blank" class="twitter">Twitter</a></li>
+  <li><a href="http://www.twitter.com/rouxacademy" title="Follow us!" target="_blank" class="twitter">Twitter</a></li>
   <li><a href="https://plus.google.com/" title="Google Plus" target="_blank" class="google">Google Plus</a></li>
   <li><a href="http://facebook.com" title="Be our friend" target="_blank" class="facebook">Facebook</a></li>
   <li><a href="http://www.linkedin.com" title="Let's connect" target="_blank" class="linked">LinkedIn</a></li>
@@ -77,7 +77,7 @@ New York, New York 10001<br>
 </section>
 <section class="show info">
 <h2>Current Show</h2>
-<img src="_images/show1.jpg" width="285" height="230" alt="Current show">
+<img src="{{ URL::asset('_images/show1.jpg') }}" width="285" height="230" alt="Current show">
 <p>Join us on May 11th for the opening reception of Ceramic Currency, an annual show presented by graduates from the Craft and Design program. Come see an exhibition of contemporary pottery and ceramic sculpture by over 30 artists. <a href="about/current_show.htm" title="current show" class="more">more info</a></p>
 </section>
 </aside>
