@@ -33,16 +33,24 @@ class HomeController extends BaseController {
 			$newColumn -> boolean('alumni');
 			$newColumn -> dropColumn('exhibition_date');
 		});
-        */
-        
+
+
         Schema::create('sculpture', function($newTable){
             $newTable -> increments('id');
             $newTable -> string('name', 500);
             $newTable -> string('artist');
-            $newTable -> int('year', 4);
+            $newTable -> date('created');
             $newTable -> timestamps();
         });
 
+
+        Schema::table('sculpture', function($newColumn){
+           $newColumn -> text('description');
+        });
+
+
+        Schema::dropIfExists('sculpture');
+        */
 		$theLandmarks = array("St. Marks", "Broklyn Heights", "Times Square", "Julius Berger");
 		return View::make('hello', array('theLocation' => 'Ibadan', 'theWeather' => 'stormy',
 			'theLandmarks' => $theLandmarks));
