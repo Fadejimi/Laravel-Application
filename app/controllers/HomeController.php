@@ -57,7 +57,7 @@ class HomeController extends BaseController {
 		$paintings->artist = 'Lionel Messi';
 		$paintings->year = 2014;
 		$paintings->save();
-		
+
 		$theLandmarks = array("St. Marks", "Broklyn Heights", "Times Square", "Julius Berger");
 		return View::make('hello', array('theLocation' => 'Ibadan', 'theWeather' => 'stormy',
 			'theLandmarks' => $theLandmarks));
